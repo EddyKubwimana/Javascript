@@ -12,16 +12,27 @@
             let heading = document.querySelector("h1");
             heading.innerHTML = counter;
             counter+=1;
+            let button = document.querySelector("button")
+            button.innerText = "Count Up"
+        
             if (heading.innerHTML == 20){
               heading.innerHTML = "The counting is over";
-              document.querySelector("button").innerText ="Refresh";
+              button.innerText ="Refresh";
               counter = 0
 
-            }
+            };
 
     
         
     };
+
+    document.addEventListener("DOMContentLoaded",function(){
+
+        
+    document.querySelector("button").onclick =count;
+
+    });
+
 
 
     </script>
@@ -29,7 +40,7 @@
 <body>
 
     <h1> Just Start</h1>
-    <button onclick = "count()">Count up</button>
+    <button>Count up</button>
     
 </body>
 </html>
