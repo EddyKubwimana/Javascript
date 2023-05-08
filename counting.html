@@ -6,36 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>counting</title>
 
-    <script>
-        let counter = 0;
-        function count(){
-            let heading = document.querySelector("h1");
-            heading.innerHTML = counter;
-            counter+=1;
-            let button = document.querySelector("button")
-            button.innerText = "Count Up"
-        
-            if (heading.innerHTML == 20){
-              heading.innerHTML = "The counting is over";
-              button.innerText ="Refresh";
-              counter = 0
-
-            };
-
-    
-        
-    };
-
-    document.addEventListener("DOMContentLoaded",function(){
-
-        
-    document.querySelector("button").onclick =count;
-
-    });
-
-
-
-    </script>
+    <script src = "counter.js"> </script>
 </head>
 <body>
 
