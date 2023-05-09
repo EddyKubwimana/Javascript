@@ -1,7 +1,13 @@
 document.addEventListener("DOMContentLoaded", function(){
    document.querySelector("#button").disabled= true;
    document.querySelector("#item").onkeyup = function(){
-    document.querySelector("#button").disabled = false;
+    if (document.querySelector("#item").value.length > 0){
+        document.querySelector("#button").disabled = false;
+    } else{
+
+        document.querySelector("#button").disabled = true;
+    }
+    
    }
    document.querySelector("form").onsubmit= function(){
 
